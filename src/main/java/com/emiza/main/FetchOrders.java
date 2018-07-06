@@ -26,6 +26,17 @@ public class FetchOrders {
 			return resultSet;
 		}
 	
+	public ResultSet checkInvoiceAndLabelAndPicked(String orderId) throws InvalidFileFormatException, SQLException, IOException {
+		
+		Object result = null;
+		String query = Constant.EMIZA_GET_EASYECOM_ORDERS.replace(Constant.REPLACE_ORDERID, orderId);
+		System.out.println(query);
+		
+		ResultSet resultSet = dbUtility.executeSqlStringTransaction(query);
+		System.out.println(resultSet);
+	
+		return resultSet;
+	}
 public void deleteOrderIDFromtable(String orderId) throws InvalidFileFormatException, SQLException, IOException {
 		 
 		

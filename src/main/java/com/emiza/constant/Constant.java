@@ -89,7 +89,9 @@ public class Constant {
 		public static final String EMIZA_INSERT_EASYECOM_ORDER = "EXEC [dbo].[SP_EMIZA_INSERT_EASYECOM_ORDER] '<WAREHOUSE>','<OWNER>','<ORDERID>'";
 		public static final String EMIZA_FETCH_EASYECOM_ORDERSFROMDATABASE="EXEC [dbo].[SP_EMIZA_GET_SALES_ORDER_FOR_DOCUMENT]";
 		public static final String EMIZA_DELETE_EASYECOM_ORDER = "EXEC [dbo].[SP_EMIZA_DELETE_EASYECOM_ORDERID] '<ORDERID>'";
-
+		public static final String EMIZA_GET_EASYECOM_ORDERS="EXEC [dbo].[SP_EMIZA_GET_EASYECOM_ORDERS] '<ORDERID>'";
+		
+		
 		public static final String REPLACE_WAREHOUSE ="<WAREHOUSE>";
 		public static final String REPLACE_OWNER ="<OWNER>";
 		public static final String REPLACE_ORDERID ="<ORDERID>";
